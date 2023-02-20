@@ -1,0 +1,307 @@
+-- Made By Dignity But I put my alt discord
+
+local NotificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/lobox920/Notification-Library/main/Library.lua"))()
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Rain-Design/Unnamed/main/Library.lua'))()
+local equipBestRemote = game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.NukeService.RE.EquipBest
+local claimNormalChest = game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.ChestService.RE.Claim
+Library.Theme = "Dark"
+local Flags = Library.Flags
+
+NotificationLibrary:SendNotification("Success", "Script made by Fokor113#5948", 3)
+
+local Window = Library:Window({
+   Text = "Nuke Simulator"
+})
+
+local Tab = Window:Tab({
+   Text = "Earth"
+})
+
+local Tab2 = Window:Tab({
+   Text = "Moon"
+})
+
+local Tab3 = Window:Tab({
+   Text = "The Future"
+})
+
+local Tab4 = Window:Tab({
+   Text = "Misc"
+})
+
+local Section = Tab:Section({
+   Text = "Teleports"
+})
+
+local Section2 = Tab2:Section({
+   Text = "Teleports"
+})
+
+local Section3 = Tab3:Section({
+   Text = "Teleports"
+})
+
+local Section4 = Tab4:Section({
+   Text = "Misc"
+})
+
+local SectionM = Tab:Section({
+   Text = "Specific Teleports"
+})
+
+local SectionMM = Tab2:Section({
+   Text = "Specific Teleports"
+})
+
+SectionM:Button({
+   Text = "Shiny Machine",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4100, 635, -4142)
+   end
+})
+
+SectionM:Button({
+   Text = "Player Upgrades",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3851, 639, -3677)
+   end
+})
+
+SectionM:Button({
+   Text = "Rainbow Machine",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4876, 635, -2819)
+   end
+})
+
+SectionMM:Button({
+   Text = "Enchanter",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3832, 854, 3265)
+   end
+})
+
+Section:Button({
+   Text = "Nuke Shop",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3989, 638, -4247)
+   end
+})
+
+Section:Button({
+   Text = "City",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3882, 636, -3726)
+   end
+})
+
+Section:Button({
+   Text = "Jungle",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3958, 635, -3376)
+   end
+})
+
+Section:Button({
+   Text = "Desert",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4354, 635, -3115)
+   end
+})
+
+Section:Button({
+   Text = "Beach",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4897, 635, -2856)
+   end
+})
+
+Section:Button({
+   Text = "Site Deep Blue",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(11293, 105, -3086)
+   end
+})
+
+Section:Button({
+   Text = "Test Lab 33",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4342, 637, -2181)
+   end
+})
+
+Section:Button({
+   Text = "Volcano HQ",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4006, 637, -2041)
+   end
+})
+
+Section2:Button({
+   Text = "Moon Base",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3767, 855, 3335)
+   end
+})
+
+Section2:Button({
+   Text = "Excavation Site 42",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3773, 857, 3169)
+   end
+})
+
+Section2:Button({
+   Text = "Dark Side Station",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1346, 837, 3400)
+   end
+})
+
+Section2:Button({
+   Text = "Dark Lab 33",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1747, 837, 3343)
+   end
+})
+
+Section3:Button({
+   Text = "Cybertopia",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8316, 1581, 1542)
+   end
+})
+
+Section3:Button({
+   Text = "Vapor Valley",
+   Callback = function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8354, 1580, 1077)
+   end
+})
+
+Section3:Button({
+   Text = "Cyber Bridge",
+   Callback = function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8323, 1579, 683)
+   end
+})
+
+Section3:Button({
+   Text = "Nuclear Lab",
+   Callback = function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(13144, -357, 1151)
+   end
+})
+
+Section4:Button({
+   Text = "Auto Claim Chests",
+   Callback = function()
+	claimNormalChest:FireServer(unpack({"NormalChest", ""}))
+	print("Claimed")
+   end
+})
+
+Section4:Button({
+   Text = "Infinite Yield",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end
+})
+
+Section4:Button({
+   Text = "Rejoin Server",
+   Callback = function()
+	game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+   end
+})
+
+Section4:Button({
+   Text = "Black Detector",
+   Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/DignityDC/modcheck/main/blackdetector'))()
+   end
+})
+
+Section4:Slider({
+   Text = "Speed",
+   Default = 25,
+   Minimum = 10,
+   Maximum = 420,
+   Callback = function(speed)
+      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
+   end
+})
+
+Section4:Toggle({
+   Text = "Auto Re-Execute",
+   Callback = function(bool)
+      if bool then
+         local queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
+
+         if queueteleport then
+            queueteleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/DignityDC/NukeSimulator/main/script"))()')
+         end
+      end
+   end
+})
+
+Section4:Toggle({
+   Text = "Mod Detection",
+   Callback = function(bool)
+      if bool then
+         loadstring(game:HttpGet('https://raw.githubusercontent.com/DignityDC/modcheck/main/script'))()
+      end
+   end
+})
+
+Section4:Toggle({
+   Text = "Auto Equip Best",
+   Callback = function(bool)
+      autoEquip = bool
+   end
+})
+
+Section4:Toggle({
+   Text = "Auto Collect",
+   Callback = function(bool)
+   	      autoCollecting = bool
+   end
+})
+
+Section4:Toggle({
+    Text = "AntiAFK",
+    Callback = function(bool)
+        antiAfkEnabled = bool
+        if antiAfkEnabled then
+            local lastInput = tick()
+            game:GetService("Players").LocalPlayer.Idled:connect(function()
+                if tick() - lastInput > 300 then -- 5 minutes
+                    game:GetService("VirtualUser"):ClickButton2(Vector2.new())
+                end
+            end)
+            game:GetService("UserInputService").InputBegan:Connect(function()
+                lastInput = tick()
+            end)
+            game:GetService("UserInputService").InputEnded:Connect(function()
+                lastInput = tick()
+            end)
+        end
+    end
+})
+
+game:GetService("RunService").Stepped:Connect(function()
+  if autoEquip then
+    equipBestRemote:FireServer()
+  end
+end)
+
+game:GetService("RunService").Stepped:Connect(function()
+  if autoCollecting then
+    for _, drop in pairs(game:GetService("Workspace").CurrencyDrops:GetChildren()) do
+      drop.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+      drop:Destroy()
+    end
+  end
+end)
+
+Tab:Select()
